@@ -1,0 +1,15 @@
+CXX = g++
+CXXFLAGS = -std=c++23 -Wall -Wextra -Wpedantic
+NAME = main
+PROG = $(NAME).exe
+
+$(PROG): $(NAME).o
+	$(CXX) $(NAME).o -o $(NAME).exe
+
+$(NAME).o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp -o $(NAME).o
+
+clear:
+	rm -f $(PROG) $(NAME).o
+
+.PHONY: clear
