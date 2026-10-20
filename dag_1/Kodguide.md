@@ -52,3 +52,20 @@ Felövningarna `main_fel*.cpp` ingår inte i det lyckade CMake-bygget - de hör 
 Övningsbladet Övningar.md finns i samma exempel-mapp. Ditt eget arbete görs i en separat labbmapp.
 
 main.cpp är nu uttryckligen lösningsförslag till övningsbladets avslutande uppgift. Skriv själv från beskrivningen innan du jämför. Förslag till övriga delövningar finns i Övningar.md.
+
+## Begrepp och syntax i exemplen
+
+Förklaringarna används tillsammans med genomgången. Extraavsnittens begrepp behövs bara om du väljer dessa exempel.
+
+### Kompilator, länkare och byggverktyg
+
+Kompilatorn översätter C++ till objektkod. Länkaren kopplar ihop objektkod och bibliotek till programmet. Make och Ninja kör byggstegen; CMake genererar byggbeskrivningen åt dem.
+
+### #include och main
+
+#include gör en headers deklarationer tillgängliga. main är programmets startfunktion; return 0 anger lyckat avslut.
+
+### std:: och <<
+
+std är standardbibliotekets namnrymd. :: väljer ett namn i en namnrymd eller klass. Med std::cout skickar << värden till utströmmen.
+

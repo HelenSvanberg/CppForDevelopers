@@ -44,3 +44,20 @@ Avkommentera rader med avsiktliga fel först när du vill studera just det felet
 Övningsbladet Övningar.md finns i samma exempel-mapp. Ditt eget arbete görs i en separat labbmapp.
 
 main.cpp är nu uttryckligen lösningsförslag till övningsbladets avslutande uppgift. Skriv själv från beskrivningen innan du jämför. Förslag till övriga delövningar finns i Övningar.md.
+
+## Begrepp och syntax i exemplen
+
+Förklaringarna används tillsammans med genomgången. Extraavsnittens begrepp behövs bara om du väljer dessa exempel.
+
+### auto, const och constexpr
+
+auto låter kompilatorn härleda typen från initialiseringen. const hindrar ändring genom detta namn. constexpr kräver här ett konstant uttryck som initialvärde.
+
+### static_cast<double>(värde)
+
+Gör en uttrycklig typkonvertering till double. Före division gör det att beräkningen blir flyttalsdivision.
+
+### ?: och boolalpha
+
+villkor ? a : b väljer ett av två uttryck. std::boolalpha skriver bool som true/false i stället för 1/0.
+

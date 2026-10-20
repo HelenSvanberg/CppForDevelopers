@@ -41,3 +41,20 @@ Avkommentera rader med avsiktliga fel först när du vill studera just det felet
 Övningsbladet Övningar.md finns i samma exempel-mapp. Ditt eget arbete görs i en separat labbmapp.
 
 main.cpp är nu uttryckligen lösningsförslag till övningsbladets avslutande uppgift. Skriv själv från beskrivningen innan du jämför. Förslag till övriga delövningar finns i Övningar.md.
+
+## Begrepp och syntax i exemplen
+
+Förklaringarna används tillsammans med genomgången. Extraavsnittens begrepp behövs bara om du väljer dessa exempel.
+
+### #ifndef, #define och #endif
+
+Preprocessordirektiv: kontrollera om ett makronamn saknas, definiera namnet och avsluta villkoret. Tillsammans skyddar de en header mot upprepad inkludering i samma översättningsenhet.
+
+### enum class och namespace
+
+enum class definierar en egen typ med namngivna alternativ, exempelvis Status::alarm. namespace grupperar namn för att undvika namnkonflikter.
+
+### std::expected och std::unexpected (extra)
+
+expected<T, E> innehåller antingen ett lyckat värde av typen T eller ett fel av typen E. unexpected skapar felalternativet; has_value kontrollerar vilket alternativ som finns och error hämtar felet.
+

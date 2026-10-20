@@ -43,3 +43,24 @@ Avkommentera rader med avsiktliga fel först när du vill studera just det felet
 Övningsbladet Övningar.md finns i samma exempel-mapp. Ditt eget arbete görs i en separat labbmapp.
 
 main.cpp är nu uttryckligen lösningsförslag till övningsbladets avslutande uppgift. Skriv själv från beskrivningen innan du jämför. Förslag till övriga delövningar finns i Övningar.md.
+
+## Begrepp och syntax i exemplen
+
+Förklaringarna används tillsammans med genomgången. Extraavsnittens begrepp behövs bara om du väljer dessa exempel.
+
+### explicit
+
+Hindrar konstruktorn från att användas för implicit konvertering och vid copy-list-initialisering. Sensor room{80} fungerar; Sensor room = 80 tillåts inte.
+
+### : threshold_{threshold}
+
+Konstruktorns medlemsinitialiseringslista initierar threshold_ innan konstruktorns kropp körs.
+
+### const efter en medlemsfunktion
+
+Funktionen får inte ändra objektets vanliga datamedlemmar genom this och kan anropas på const-objekt.
+
+### = default och <=> (extra)
+
+= default begär kompilatorns standardimplementation. Här jämför den genererade trevägsoperatorn medlemmarna i deklarationsordning; auto härleder jämförelsens returtyp.
+
