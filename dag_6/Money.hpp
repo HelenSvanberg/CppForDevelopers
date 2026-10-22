@@ -39,6 +39,10 @@ public:
         return left.cents_ < right.cents_;
     }
 
+    friend bool operator>(const Money& left, const Money& right) {
+        return left.cents_ > right.cents_;
+    }
+
     friend std::ostream& operator<<(std::ostream& output, const Money& money) {
         const long long magnitude = money.cents_ < 0 ? -money.cents_ : money.cents_;
         const char old_fill = output.fill();

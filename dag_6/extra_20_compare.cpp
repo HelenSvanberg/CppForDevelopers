@@ -12,8 +12,10 @@ int main() {
     Reading first{1, 80};
     Reading same{1, 80};
     Reading later{2, 10};
+    Reading first_less_value{1, 40};
 
-    std::cout << std::boolalpha << (first == same) << ' ' << (first < later) << '\n';
+    std::cout << std::boolalpha << (first == same) << ' ' << (first < later) << ' '
+              << (first < first_less_value) << ' ' << (first == first_less_value) << '\n';
 
     return 0;
 }

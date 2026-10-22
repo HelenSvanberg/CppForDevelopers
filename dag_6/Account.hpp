@@ -38,7 +38,7 @@ public:
 
 private:
     void require_positive(const Money& amount) const {
-        if (!(Money{0} < amount)) {
+        if (amount < Money{0}) {
             throw std::invalid_argument{"Amount must be positive"};
         }
     }
